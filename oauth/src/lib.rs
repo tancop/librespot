@@ -379,7 +379,7 @@ impl OAuthClientBuilder {
             redirect_uri: redirect_uri.to_string(),
             scopes: scopes.into_iter().map(Into::into).collect(),
             should_open_url: false,
-            message: String::from("Go back to your terminal :)"),
+            message: String::from("<script>window.close();</script>"),
         }
     }
 
@@ -470,7 +470,7 @@ pub fn get_access_token(
     println!("Browse to: {auth_url}");
 
     let code = match get_socket_address(redirect_uri) {
-        Some(addr) => get_authcode_listener(addr, String::from("Go back to your terminal :)")),
+        Some(addr) => get_authcode_listener(addr, String::from("<script>window.close();</script>")),
         _ => get_authcode_stdin(),
     }?;
     trace!("Exchange {code:?} for access token");
