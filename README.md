@@ -7,7 +7,7 @@ Current maintainers are [listed on GitHub](https://github.com/orgs/librespot-org
 # librespot
 *librespot* is an open source client library for Spotify. It enables applications to use Spotify's service to control and play music via various backends, and to act as a Spotify Connect receiver. It is an alternative to the official and [now deprecated](https://pyspotify.mopidy.com/en/latest/#libspotify-s-deprecation) closed-source `libspotify`. Additionally, it will provide extra features which are not available in the official library.
 
-_Note: librespot only works with Spotify Premium. This will remain the case. We will not support any features to make librespot compatible with free accounts, such as limited skips and adverts._
+**Note: This is an unofficial "cracked" version of librespot that supports free accounts. The official one only supports premium accounts. If you're on a free account please don't report issues to upstream.**
 
 ## Quick start
 We're available on [crates.io](https://crates.io/crates/librespot) as the _librespot_ package. Simply run `cargo install librespot` to install librespot on your system. Check the wiki for more info and possible [usage options](https://github.com/librespot-org/librespot/wiki/Options).
